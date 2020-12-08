@@ -1,5 +1,16 @@
 <html>
 <head>
+<style>
+td {
+font-size:100px;
+}
+.abc {
+font-size:100px;
+}
+.abd {
+font-size:50px;
+}
+</style>
 <title>
 Calculator
 </title>
@@ -7,34 +18,35 @@ Calculator
 
 <table border="0">
 <tr>
-<td>LOW</td>
-<td><input type="number" id="low"></td>
+<td >LOW</td>
+<td><input class="abc"  type="number" id="low"></td>
 </tr>
 <tr>
 <td>HIGH</td>
-<td><input type="number" id="high"></td>
+<td><input class="abc"  type="number" id="high"></td>
+</tr>
+
+ <tr>
+<td>buy %</td>
+<td><input class="abc" type="number" id="p1"></td>
 </tr>
   <tr>
-<td> <input type="submit" onclick=num() ></intput></td>
+<td>sell %</td>
+<td><input class="abc"  type="number" id="p2"></td>
 </tr>
- 
-  
+  <tr>
+<td> <input type="submit" class="abd" onclick=num() ></intput></td>
+</tr>
 <tr>
 <td>Difference</td>
 <td><p id="diff"></td>
 </tr>
-<tr>
-<td>%</td>
-<td><input type="number" id="p1"></td>
-</tr>
+
 <tr>
 <td>Buy</td>
 <td><p id="buy"></td>
 </tr>
-<tr>
-<td>%</td>
-<td><input type="number" id="p2"></td>
-</tr>
+
 <tr>
 <td>Sell</td>
 <td><p id="sell"></td>
