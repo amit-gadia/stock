@@ -7,7 +7,7 @@ Calculator
 <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
 <input type="number" id="a" value="50">
 +<input type="number" id="b" value="25">
-=<input type="submit" name="x" for="a b"></intput>
+=<input type="submit" onclick=num(a.value,b.value) name="x" for="a b"></intput>
 </form>
 <table border="0">
 <tr>
@@ -50,7 +50,8 @@ var b="";
 var c;
 var d=0;
 var f=0;
-function num(n){
+function num(n,m){
+  console.log(n,m)
 if(n=="c"){
 a="";
 b="";
