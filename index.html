@@ -19,6 +19,7 @@ Calculator
 
 <tr>
 <td>LOW</td>
+  <form>
 <td><input type="number" id="a"></td>
 </tr>
 <tr>
@@ -50,76 +51,13 @@ Calculator
 <td>Sell</td>
 <td><p id="buy"></td>
 </tr>
+  </form>
  </table>
 <script>
 
-var a="";
-var b="";
-var c;
-var d=0;
-var f=0;
 function num(n,m){
-  console.log(n,m)
-if(n=="c"){
-a="";
-b="";
-c=0;
-d=0;
-f=0;
-console.log(n)
-}
-if(f==0 && n!="=" && n!="c" && n!="+" && n!="-" && n!="*" && n!="/" ){
-a=a+n
-c=a;
-console.log(a,"a")
-}
-else if(n=="+" || n=="-" || n=="*" || n=="/" && a!="0")
-{
-d=n
-c=a+d
-console.log(d,"add")
-f=5;
-}
-else if(a!="" && n!="=" ){
-b=b+n
-c=a+d+b;
-console.log(b,"b")
-}
-else if(n=="="){
-switch(d){
-case '+':{
-a=Number(a)
-b=Number(b)
-c=a+b
-a=c
-b=0
-break 
-}
-case '-':{
-c=a-b
-a=c
-b=0
-break 
-}
-case '*':{
-c=a*b
-a=c
-b=0
-console.log(c)
-break 
-
-}
-case '/':{
-c=a/b
-a=c
-b=0
-break 
-
-}
-}
-}
+  console.log(n,m);
 document.getElementById("display").innerHTML=n;
-
 }
 
 
