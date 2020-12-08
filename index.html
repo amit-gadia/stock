@@ -5,29 +5,17 @@ Calculator
 </title>
 <body>
 
-
-</form>
 <table border="0">
 <tr>
-<th colspan="4">STOCK MARKET</th>
-</tr><tr>
-<td colspan="4"><p id="display">0</p></td>
-</tr>
-<tr>
-<td colspan=3><button onclick=num("c")>CLEAR</button></td>
-</tr>
-
-<tr>
 <td>LOW</td>
-  <form>
-<td><input type="number" id="a"></td>
+<td><input type="number" id="low"></td>
 </tr>
 <tr>
 <td>HIGH</td>
-<td><input type="number" id="b"></td>
+<td><input type="number" id="high"></td>
 </tr>
   <tr>
-<td> <input type="submit" onclick=num(a.value,b.value) ></intput></td>
+<td> <input type="submit" onclick=num() ></intput></td>
 </tr>
  
   
@@ -55,9 +43,13 @@ Calculator
  </table>
 <script>
 
-function num(n,m){
-  console.log(n,m);
-document.getElementById("display").innerHTML=n;
+function num(){function abc(){
+var low= document.getElementById("low").value;
+console.log(low);
+
+var high= document.getElementById("high").value;
+console.log(high);
+}
 }
 
 
